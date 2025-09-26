@@ -14,4 +14,23 @@
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
+    background-color: #F6F5F6;
+    margin: 0;
+    padding: 72px 38px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas:
+        "daniel-card"
+        "jonathan-card"
+        "jeanette-card"
+        "patrick-card"
+        "kira-card";
+    row-gap: 30px;
+}
+
+.testimonial-card {
+    border-radius: 15px;
+    padding: 32px;
 }
