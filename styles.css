@@ -14,6 +14,7 @@
 body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
+    font-weight: 500;
     background-color: #F6F5F6;
     margin: 0;
     padding: 72px 36px;
@@ -33,6 +34,7 @@ body {
 .testimonial-card {
     border-radius: 8px;
     padding: 32px;
+    box-shadow: 38px 45px 120px -55px var(--grey-color4);
 }
 
 .customer {
@@ -50,7 +52,6 @@ body {
 }
 
 .customer-name {
-    font-weight: 500;
     line-height: 110%;
     margin: 0 0 4px;
 }
@@ -113,9 +114,27 @@ body {
 #patrick-card {
     grid-area: patrick-card;
     background-color: var(--darkblue-color);
+    color: var(--white-color);
+}
+
+#patrick-card img {
+    border: var(--purple-color3) 2px solid;
+}
+
+#patrick-card .summary {
+    color: var(--grey-color2);
+}
+
+#patrick-card .quote {
+    color: var(--grey-color1);
 }
 
 #kira-card {
     grid-area: kira-card;
     background-color: var(--white-color);
+    color: var(--grey-color4);
+}
+
+#kira-card .customer-role, #kira-card .quote {
+    color: var(--grey-color3);
 }
