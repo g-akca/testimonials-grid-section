@@ -18,6 +18,11 @@ body {
     background-color: #F6F5F6;
     margin: 0;
     padding: 72px 36px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #grid-container {
@@ -97,11 +102,11 @@ body {
     color: var(--white-color);
 }
 
-#jonathan-card .customer-role {
+#jonathan-card .customer-role, #patrick-card .summary {
     color: var(--grey-color2);
 }
 
-#jonathan-card .quote {
+#jonathan-card .quote, #patrick-card .quote {
     color: var(--grey-color1);
 }
 
@@ -111,7 +116,7 @@ body {
     color: var(--grey-color4);
 }
 
-#jeanette-card .customer-role, #jeanette-card .quote {
+#jeanette-card .customer-role, #jeanette-card .quote, #kira-card .customer-role, #kira-card .quote {
     color: var(--grey-color3);
 }
 
@@ -125,27 +130,15 @@ body {
     border: var(--purple-color3) 2px solid;
 }
 
-#patrick-card .summary {
-    color: var(--grey-color2);
-}
-
-#patrick-card .quote {
-    color: var(--grey-color1);
-}
-
 #kira-card {
     grid-area: kira-card;
     background-color: var(--white-color);
     color: var(--grey-color4);
 }
 
-#kira-card .customer-role, #kira-card .quote {
-    color: var(--grey-color3);
-}
-
 @media screen and (min-width: 768px) {
     body {
-        padding: 72px 58px;
+        padding: 72px 60px;
     }
 
     #grid-container {
@@ -155,6 +148,7 @@ body {
             "patrick-card patrick-card"
             "kira-card kira-card";
         column-gap: 32px;
+        max-width: 1000px;
     }
 
     #daniel-card {
@@ -166,6 +160,38 @@ body {
         position: absolute;
         z-index: 1;
         right: 172px;
+        top: 0;
+    }
+
+    #daniel-card .summary {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 72px 165px;
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "daniel-card daniel-card jonathan-card kira-card"
+            "jeanette-card patrick-card patrick-card kira-card";
+        column-gap: 32px;
+        max-width: 1240px;
+    }
+
+    #daniel-card {
+        position: relative;
+    }
+
+    #daniel-card #quote-float {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 62px;
         top: 0;
     }
 
