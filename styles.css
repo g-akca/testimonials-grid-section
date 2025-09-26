@@ -35,9 +35,54 @@ body {
     padding: 32px;
 }
 
+.customer {
+    display: flex;
+    align-items: center;
+}
+
+.customer img {
+    height: 28px;
+    border-radius: 50%;
+}
+
+.customer-info {
+    margin-left: 12px;
+}
+
+.customer-name {
+    line-height: 110%;
+    margin: 0 0 4px;
+}
+
+.customer-role {
+    font-size: 11px;
+    line-height: 110%;
+    margin: 0;
+}
+
+.summary {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.quote {
+    line-height: 140%;
+    margin-bottom: 0;
+}
+
 #daniel-card {
     grid-area: daniel-card;
     background-color: var(--purple-color3);
+    color: var(--white-color);
+}
+
+#daniel-card .customer-role, #daniel-card .quote {
+    color: var(--purple-color1);
+}
+
+#daniel-card img {
+    border: var(--purple-color2) 2px solid;
 }
 
 #jonathan-card {
