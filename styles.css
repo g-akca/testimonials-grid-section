@@ -1,0 +1,17 @@
+:root {
+    --purple-color1: hsl(260, 100%, 95%);
+    --purple-color2: hsl(264, 82%, 80%);
+    --purple-color3: hsl(263, 55%, 52%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-color1: hsl(214, 17%, 92%);
+    --grey-color2: hsl(0, 0%, 81%);
+    --grey-color3: hsl(224, 10%, 45%);
+    --grey-color4: hsl(217, 19%, 35%);
+    --darkblue-color: hsl(219, 29%, 14%);
+    --black-color: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
