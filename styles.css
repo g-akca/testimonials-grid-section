@@ -16,7 +16,7 @@ body {
     font-size: 13px;
     background-color: #F6F5F6;
     margin: 0;
-    padding: 72px 38px;
+    padding: 72px 36px;
 }
 
 #grid-container {
@@ -50,6 +50,7 @@ body {
 }
 
 .customer-name {
+    font-weight: 500;
     line-height: 110%;
     margin: 0 0 4px;
 }
@@ -61,7 +62,7 @@ body {
 }
 
 .summary {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 120%;
 }
@@ -88,11 +89,25 @@ body {
 #jonathan-card {
     grid-area: jonathan-card;
     background-color: var(--grey-color4);
+    color: var(--white-color);
+}
+
+#jonathan-card .customer-role {
+    color: var(--grey-color2);
+}
+
+#jonathan-card .quote {
+    color: var(--grey-color1);
 }
 
 #jeanette-card {
     grid-area: jeanette-card;
     background-color: var(--white-color);
+    color: var(--grey-color4);
+}
+
+#jeanette-card .customer-role, #jeanette-card .quote {
+    color: var(--grey-color3);
 }
 
 #patrick-card {
