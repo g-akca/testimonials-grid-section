@@ -27,10 +27,35 @@ body {
         "jeanette-card"
         "patrick-card"
         "kira-card";
-    row-gap: 30px;
+    row-gap: 32px;
 }
 
 .testimonial-card {
-    border-radius: 15px;
+    border-radius: 8px;
     padding: 32px;
+}
+
+#daniel-card {
+    grid-area: daniel-card;
+    background-color: var(--purple-color3);
+}
+
+#jonathan-card {
+    grid-area: jonathan-card;
+    background-color: var(--grey-color4);
+}
+
+#jeanette-card {
+    grid-area: jeanette-card;
+    background-color: var(--white-color);
+}
+
+#patrick-card {
+    grid-area: patrick-card;
+    background-color: var(--darkblue-color);
+}
+
+#kira-card {
+    grid-area: kira-card;
+    background-color: var(--white-color);
 }
